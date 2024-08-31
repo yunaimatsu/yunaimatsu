@@ -1,0 +1,48 @@
+---
+---
+<header>
+	<a href="/"><h1>Yunai</h1></a>
+    <nav>
+        <a href="/about"><h2>About</h2></a>
+        <a href="/blog"><h2>Blog</h2></a>
+        <a href="/contact"><h2>Contact</h2></a>
+    </nav>
+</header>
+
+<style>
+    @import './styles/_global.scss';
+    header {
+        /* そもそもの位置の確定 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        height: var(--header-height);
+
+        /* Design */
+        background-color: var(--bg-color-l);
+        
+        /* Flexbox properties */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        
+        color: var(--font-color-l);
+
+        /* Border */
+        border-bottom: var(--border-color) 1px solid;
+
+        padding-right: var(--side-space);
+        padding-left: var(--side-space);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        column-gap: 1em;
+    }
+</style>

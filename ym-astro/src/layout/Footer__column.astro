@@ -1,0 +1,33 @@
+---
+const { title, title__url, items, item_url } = Astro.props;
+type Props = {
+    title: string;
+    title__url: string;
+    items: string[];
+    item_url: string[];
+};
+---
+
+<nav class="footer__column">
+    <a href={title__url}><h2>{title}</h2></a>
+    <ul>
+        {items.map((item, index) => (
+            <li>
+                <a href={item_url[index]}>{item}</a>
+            </li>
+        ))}
+    </ul>
+</nav>
+
+<style>
+    nav {
+    }
+    .footer__column h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .footer__column ul li {
+        margin-bottom: 8px;
+    }
+</style>

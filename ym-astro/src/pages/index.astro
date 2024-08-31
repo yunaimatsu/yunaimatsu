@@ -1,0 +1,40 @@
+---
+import Layout from '../layout/Layout.astro';
+import CTA from './index__cta.astro'
+import Description from './index__description.astro'
+---
+<Layout title="Welcome to Astro.">
+	<CTA />
+	<Description
+		title="About"
+		content=""
+		link="/about"
+		image="/path/to/image.jpg"
+		imageAlt="Description of the image"
+	/>
+</Layout>
+<style>
+	main {
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+	}
+</style>

@@ -1,0 +1,51 @@
+---
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import './styles/_global.scss';
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta
+			charset="UTF-8"
+			name="description"
+			content="Astro description"
+			name="viewport"
+			content="width=device-width"
+			name="generator"
+			content={Astro.generator}
+		/>
+		<link 
+			rel="icon"
+			type="image/svg+xml"
+			href="/favicon.png"
+		/>
+		<title>{title}</title>
+	</head>
+	<body style="margin: 0px; background-color: var(--bg-color-l)">
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+<style>
+	@import './styles/_global.scss';
+	main {
+		margin-top: var(--header-height);
+
+		/* Design */
+        background-color: var(--bg-color-l);
+		--vertical-space: 2rem;
+		padding-top: var(--vertical-space);
+		padding-bottom: var(--vertical-space);
+		margin-right: var(--side-space);
+		margin-left: var(--side-space);
+	}
+</style>

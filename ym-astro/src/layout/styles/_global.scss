@@ -1,0 +1,55 @@
+@import 'selection-options';
+@import 'toggle-options';
+
+// Default
+p {
+    --font-size: 28px;
+    font-size: var(--font-size);
+}
+html {
+    font-family: system-ui, sans-serif;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+}
+
+a {
+    text-decoration: none; /* Remove the underline */
+    color: inherit; /* Match the link color to the parent element's color */
+}
+
+a:visited {
+    color: inherit; /* Do not change the color of visited links */
+}
+
+ul, ol {
+    list-style-type: none; /* Remove the list markers */
+    padding-left: 0; /* Remove the default indentation (optional) */
+    margin: 0; /* Remove default margin (optional) */
+}
+
+code {
+    font-family:
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+}
+
+// Selection-Options
+::selection {
+    background-color: #ffcc00; /* Set background color to yellow */
+    color: #000000;            /* Set text color to black */
+}
+
+// Vendor prefix for Firefox
+::-moz-selection {
+    background-color: #ffcc00;
+    color: #000000;
+}
