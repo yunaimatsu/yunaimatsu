@@ -10,3 +10,9 @@ layout: '@layout/Layout.astro'
 それは、**資本主義のイタズラ**と、**皆さんの挫折**が関係しています。
 # たった一人の個人による、手書きで
 # 広告は一切掲載しない
+## [言語](/b/lang/lang-home)
+* [言語学](/b/lang/ling/ling-home)
+* [言語](/b/lang/lang-home)
+## 技術
+* [コンピュータ](b/tech/computer-home)
+* [機械工学](b/tech/machine-home)

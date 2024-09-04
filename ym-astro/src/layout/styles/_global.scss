@@ -2,8 +2,7 @@
 @import 'toggle-options';
 
 // Default
-p {
-    --font-size: 28px;
+p, ul, ol {
     font-size: var(--font-size);
 }
 html {
@@ -40,16 +39,23 @@ code {
         Bitstream Vera Sans Mono,
         Courier New,
         monospace;
+    
+    background-color: var(--font-color-bg);
+    color: var(--font-color-code);
+    border-radius: 5px;
+    --code-padding: 5px;
+    padding-top: var(--code-padding);
+    padding-bottom: var(--code-padding);
 }
 
 // Selection-Options
 ::selection {
-    background-color: #ffcc00; /* Set background color to yellow */
-    color: #000000;            /* Set text color to black */
+    background-color: var(--accent-color); /* Set background color to yellow */
+    color: #000000;       /* Set text color to black */
 }
 
 // Vendor prefix for Firefox
 ::-moz-selection {
-    background-color: #ffcc00;
+    background-color: var(--accent-color);
     color: #000000;
 }
