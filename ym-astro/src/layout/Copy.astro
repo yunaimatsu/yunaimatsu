@@ -1,0 +1,29 @@
+---
+import { setupCopyButton } from './utils/copyToClipboard';
+
+// Ensure the TypeScript function is called after the component mounts
+setTimeout(() => {
+  setupCopyButton('copyButton', 'contentToCopy');
+}, 0);
+
+// <script>
+// 	import Title from './Title.astro';
+// 	interface Props {
+// 		title: string;
+// 	}
+// 	const { title } = Astro.props;
+// 	const { href, text } = Astro.props;
+//     const titleText = "Hello World"
+// </script>
+// <Title titleText={titleText} />
+
+---
+<html>
+  <body>
+    <div id="contentToCopy">
+      ここに来るよ！
+    </div>
+
+    <button id="copyButton">Copy Content</button>
+  </body>
+</html>

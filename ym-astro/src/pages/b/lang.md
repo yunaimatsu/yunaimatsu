@@ -12,7 +12,12 @@ layout: '@layout/Layout.astro'
 * アセンブリ言語
 ### 高級言語
 
-## 論理式
+> 論理
+Content that is hidden by default. Click the toggle to expand and view this content.
+
+Another line of text that won't be part of the toggle.
+
+
 ### 形式論理学
 ### 非形式路理学
 
