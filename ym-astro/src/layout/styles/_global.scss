@@ -3,7 +3,7 @@
 @import 'custom-md';
 
 // Default
-p, ul, ol {
+p, ul {
     font-size: var(--font-size);
 }
 html {
@@ -15,19 +15,15 @@ img {
     height: auto;
 }
 
-a {
-    text-decoration: none; /* Remove the underline */
-    color: inherit; /* Match the link color to the parent element's color */
-}
-
-a:visited {
-    color: inherit; /* Do not change the color of visited links */
-}
-
-ul, ol {
+ul {
     list-style-type: none; /* Remove the list markers */
     padding-left: 0; /* Remove the default indentation (optional) */
     margin: 0; /* Remove default margin (optional) */
+}
+
+ol {
+    font-size: var(--font-size);
+    padding-left: 21px;
 }
 
 code {
@@ -41,12 +37,12 @@ code {
         Courier New,
         monospace;
     
-    background-color: var(--font-color-bg);
+    background-color: black;
     color: var(--font-color-code);
     border-radius: 5px;
     --code-padding: 5px;
-    padding-top: var(--code-padding);
-    padding-bottom: var(--code-padding);
+    // padding-top: var(--code-padding);
+    // padding-bottom: var(--code-padding);
 }
 
 // Selection-Options

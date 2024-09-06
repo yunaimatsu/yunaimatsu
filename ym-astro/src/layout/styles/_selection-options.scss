@@ -12,6 +12,9 @@
     --font-color-code: var(--accent-color);
     --font-color-bg: #cccccc;
 
+    --font-color-url-l: #56574c;
+    --font-color-url-d: #999999;
+
     --border-color: #aeaeae;
 
     --bg-color-l: #eaeaea;
@@ -28,4 +31,15 @@
 // Fonts
 :root {
     --font-stack: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+:root {
+    a {
+        // text-decoration: none; /* Remove the underline */
+        color: var(--font-color-url-l); /* Match the link color to the parent element's color */
+    }
+
+    a:visited {
+        color: var(--font-color-url-l) /* Do not change the color of visited links */
+    }
 }

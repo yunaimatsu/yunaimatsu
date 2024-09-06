@@ -1,6 +1,9 @@
+---
+layout: '@layout/Layout.astro'
+---
 # 順序回路Sequential circuits
 
-半加算器の時と同じ2つの入力に加えて、下の桁の繰り上がりがあった場合の入力$C’$を設ける。
+半加算器の時と同じ2つの入力に加えて、下の桁の繰り上がりがあった場合の入力 $C’$を設ける。
 
 C: c of carry桁あがりした2桁目の数に当たる出力
 
@@ -10,7 +13,7 @@ $$
 \text{Input(A,B,C')}\longmapsto \text{Full Adder} \longmapsto \text{Output(C,S)}
 $$
 
-最大出力は$1+1=11$である。よって、出力は2つでも大丈夫。
+最大出力は$$1+1=11$$である。よって、出力は2つでも大丈夫。
 
 ### **Registers**
 
@@ -128,3 +131,78 @@ graph TB
     style C fill:#bbf,stroke:#333,stroke-width:2px;
     style D fill:#bbf,stroke:#333,stroke-width:2px;
 ```
+
+```mermaid
+graph TB
+    S["Set (S)"] --> A[NOT]
+    R["Reset (R)"] --> B[NOT]
+    A --> C[NAND]
+    B --> D[NAND]
+    C -- "Q" --> E["Output Q"]
+    D -- "Q̅" --> F["Output Q̅"]
+    C -- feedback1 --> D
+    D -- feedback2 --> C
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px;
+    style B fill:#f9f,stroke:#333,stroke-width:2px;
+    style C fill:#bbf,stroke:#333,stroke-width:2px;
+    style D fill:#bbf,stroke:#333,stroke-width:2px;
+
+```
+
+For the first image:
+
+- **S = 1, R = 0**
+
+```mermaid
+graph TB
+    S1((S = 1)) --> A1[NOT]
+    R0((R = 0)) --> B1[NOT]
+    A1 --> C1[NAND]
+    B1 --> D1[NAND]
+    C1 -- "Q = 1" --> E1((Q = 1))
+    D1 -- "Q̅ = 0" --> F1((Q̅ = 0))
+    C1 -- feedback1 --> D1
+    D1 -- feedback2 --> C1
+
+    style A1 fill:#f9f,stroke:#333,stroke-width:2px;
+    style B1 fill:#f9f,stroke:#333,stroke-width:2px;
+    style C1 fill:#bbf,stroke:#333,stroke-width:2px;
+    style D1 fill:#bbf,stroke:#333,stroke-width:2px;
+
+```
+
+For the second image:
+
+- **S = 0, R = 1**
+
+```mermaid
+graph TB
+    S0((S = 0)) --> A2[NOT]
+    R1((R = 1)) --> B2[NOT]
+    A2 --> C2[NAND]
+    B2 --> D2[NAND]
+    C2 -- "Q = 0" --> E2((Q = 0))
+    D2 -- "Q̅ = 1" --> F2((Q̅ = 1))
+    C2 -- feedback1 --> D2
+    D2 -- feedback2 --> C2
+
+    style A2 fill:#f9f,stroke:#333,stroke-width:2px;
+    style B2 fill:#f9f,stroke:#333,stroke-width:2px;
+    style C2 fill:#bbf,stroke:#333,stroke-width:2px;
+    style D2 fill:#bbf,stroke:#333,stroke-width:2px;
+
+```
+
+### English Translation:
+
+- **S = 1, R = 0:**
+    - Set (`S`) input is `1`.
+    - Reset (`R`) input is `0`.
+    - Output `Q` is `1`.
+    - Output `Q̅` (Q bar) is `0`.
+- **S = 0, R = 1:**
+    - Set (`S`) input is `0`.
+    - Reset (`R`) input is `1`.
+    - Output `Q` is `0`.
+    - Output `Q̅` (Q bar) is `1`.

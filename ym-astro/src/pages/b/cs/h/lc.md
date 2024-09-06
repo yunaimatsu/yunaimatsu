@@ -1,91 +1,25 @@
 ---
 layout: '@layout/Layout.astro'
 ---
+# 論理回路
+## コンピュータの「細胞」
+コンピュータ(coputer)とは、「計算するもの」という意味です。その計算は、全て論理回路を複雑に組み合わせることで行われています。つまり、論理回路について学ことは、コンピュータの根幹を深く、直感的に理解するのに非常に重要です。当サイトでは、以下のように学んでいきます。
+1. 論理回路の基本的なパーツを理解する。
+2. 基本的なパーツを組み合わせてより複雑な処理ができる回路を作る仕組みを理解します。
+3. さらに、それらの複雑な回路をさらにまとめて実際に使われるIC(集積回路)ができる仕組みを理解します。また、ICには様々な種類があるので、その分類も
 
-
-# 集積度による分類
-集積度**小**
-
-1. SSI
-2. MSI
-3. LSI
-4. VLSI
-5. ULSI
-
-集積度**大**
-
-System LSI
-
-- 演算処理LSI
-- 記憶用LSI
-- グラフィック機能用LSI
-- 特定用途向けLSI
-
-複数の機能を一つの半導体製品にまとめたSoC
-
-SiP: 複数のLSIを一つのパッケージ
-
-# カスタマイザビリティによる分類
-市販↔カスタム
-## カスタム
-Custom IC(市販のICを組み合わせて目的の機能を作るのではなく、自身の設計した回路をそのままICとして製造したもの)
-ASIC(この中で、特定の用途に絞ったもの)
-## Semi-custom IC
-PLD (Programmable Logic Device)
-1. PLD(Programmable Logic Device)
-    1. 設計した回路を電気的に書き込むことができるIC。リーズナブル(自由にオリジナルの回路を作ることができる。再度書き換えを行うだけ)
-    2. FPGA(Field Programmable Gate Array)
-    3. PLD typically stands for "Programmable Logic Device," which refers to a type of electronic component used to build reconfigurable digital circuits. Here’s an enumeration of some common types of PLDs:
-    4. **Simple Programmable Logic Devices (SPLD)**   - Includes Programmable Array Logic (PAL), Generic Array Logic (GAL), and Programmable Logic Array (PLA).
-    5. **Complex Programmable Logic Devices (CPLD)**   - Combines multiple SPLDs on a single chip and offers a larger capacity and more complex logic functions.
-    6. **Field-Programmable Gate Arrays (FPGA)**   - Contains an array of programmable logic blocks and a hierarchy of reconfigurable interconnects, allowing complex designs.
-    7. **Field-Programmable Interconnect (FPI)**   - Provides programmable interconnections to customize the configuration of a circuit.
-    8. **Field-Programmable System-on-Chip (FPSoC)**   - Integrates FPGA fabric with a processor core, allowing software and hardware to be designed concurrently.
-    9. These devices are widely used in applications that require flexibility, such as embedded systems, digital signal processing, and telecommunications.
-- SPLD (Simple Programmable Logic Device)
-- CPLD (Complex Programmable Logic Device)
-- FPGA (Field-Programmable Gate Array)
-## 市販general-purpose, off-the-shelf ICs.
-
-
-
-
-# 組み合わせ回路と順序回路がある
-The main differences between 組み合わせ回路 (combinational circuits) and 順序回路 (sequential circuits) are:
-### メモリ:
-組み合わせ回路はメモリを持たない。出力は入力のみに依存する。
-順序回路はフリップフロップ回路のようにメモリを持っている。静的情報を保持できる。
-### 出力依存性
-組み合わせ回路では、出力は現在入力値のみに依存する。
-順序回路では、出力が現在の入力と過去の入力（状態）どちらもに依存する。
-### Applications: Used in creating memory elements, control systems, and for implementing complex digital behaviors.
-In your hardware-home.md file, while feedback loops aren't explicitly mentioned, they are implicit in the sequential circuits like registers and counters that are listed under the logic circuit section.
-### 組み合わせ回路にはフィードバックループがないが、順序回路は大抵フィードバックパスがあり、アウトプットがインプットとして使われる。
-### Timing:
-組み合わせ回路はクロックシグナルに頼らないが、順序回路状態変化にクロック周波を使う。
-### Examples:
-組み合わせ回路: Adders, multiplexers, decoders.
-順序回路: Counters, registers, finite state machines.
-### Complexity:
-
-Column: Feedback
-"mechanism where the output of a system is routed back to become an input, influencing future outputs. This creates a cycle of cause and effect.
-Key points about feedback loops:
-Purpose: They allow circuits to maintain state or memory. Common in sequential circuits: Found in flip-flops, latches, and more complex systems like state machines.
-Not present in combinational circuits: Combinational circuits have no memory or state, so they don't use feedback.
-Examples:
-In an SR latch, the outputs Q and Q̅ are fed back to the inputs of the NAND gates.
-In a counter, the current count is fed back to determine the next count.
-Timing considerations: Feedback loops introduce timing dependencies, often requiring clock signals to manage state changes properly.
-Stability: Proper design is crucial to avoid unstable oscillations or race conditions.
-
-組み合わせ回路: Generally simpler in design.
-順序回路: More complex due to state-holding elements and timing considerations.
-    
+# 分類
+分類といっても、様々な基準で分類することができます。ただ、最も一般的な分類方法は根本的な**構造の違い**による分類です。
+* ## [構造による分類]
+* ### [組み合わせ回路](/b/cs/h/lc/combinational)
+* ### [順序回路](/b/cs/h/lc/sequential)
+* ## [集積度による分類](/b/cs/h/lc/integrity)
+* ## [使い道による分類](/b/cs/h/lc/purpose)
+* ## [カスタマイズ度合いによる分類](/b/cs/h/lc/customizability)
 
 ## Sequential circuits
 
-半加算器の時と同じ2つの入力に加えて、下の桁の繰り上がりがあった場合の入力$C’$を設ける。
+半加算器の時と同じ2つの入力に加えて、下の桁の繰り上がりがあった場合の入力$$C’$$を設ける。
 
 C: c of carry桁あがりした2桁目の数に当たる出力
 

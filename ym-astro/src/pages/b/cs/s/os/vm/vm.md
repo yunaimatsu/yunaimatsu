@@ -1,6 +1,6 @@
 - ここでのプロセッサー数とは何？EFIとは何？
     
-    ![Untitled](/blog/tech/hardware-vm.png)
+    ![Untitled](/blog/cs/hardware-vm.png)
     
     EFI stands for **Extensible Firmware Interface**. It is a type of firmware interface for computers, designed as a replacement for the older BIOS (Basic Input/Output System). EFI was developed by Intel and later evolved into the Unified Extensible Firmware Interface (UEFI), which is now widely used in modern computers.
     

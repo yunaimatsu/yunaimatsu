@@ -1,4 +1,8 @@
-- Classification of memory
+記憶階層, 高速なものほど高価
+
+![Memory Hierarchy](/blog/cs/memory-hierarchy.jpeg)
+<img src="/blog/cs/memory-hierarchy.jpeg" alt="Memory Hierarchy" width="500" height="auto">
+Classification of memory
     - RAM
         
         (rondom-access Memory), volatile(揮発性を持つ、電源を切ったらデータが消える)

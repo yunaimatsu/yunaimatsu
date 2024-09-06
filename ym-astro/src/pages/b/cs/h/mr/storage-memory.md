@@ -1,11 +1,7 @@
 **Fixed disc device**
 
 - Hard disc
-    
-    <aside>
-    <img src="/icons/calculator_lightgray.svg" alt="/icons/calculator_lightgray.svg" width="40px" /> ハードディスクは、高速回転しているディスクに磁気ヘッドを使って情報を読み書きする。
-    
-    </aside>
+    ハードディスクは、高速回転しているディスクに磁気ヘッドを使って情報を読み書きする。
     
     - 構造
         - 特徴
