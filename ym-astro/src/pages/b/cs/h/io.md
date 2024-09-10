@@ -1,6 +1,7 @@
 ---
 layout: '@layout/Layout.astro'
 ---
+    
 # I/O
 device
 * キーボード

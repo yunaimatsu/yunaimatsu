@@ -33,13 +33,10 @@
     --font-stack: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-:root {
-    a {
-        // text-decoration: none; /* Remove the underline */
-        color: var(--font-color-url-l); /* Match the link color to the parent element's color */
-    }
+a {
+    color: black;
+}
 
-    a:visited {
-        color: var(--font-color-url-l) /* Do not change the color of visited links */
-    }
+a::visited {
+    color: black;
 }

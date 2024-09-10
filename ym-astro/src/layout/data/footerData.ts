@@ -8,8 +8,8 @@ export const footer__data = [
     {
         title: "Blog",
         title__url: "/blog",
-        items: ["Language", "Mathematics", "Optimization", "Statistics", "Computer Science", "Under Development"],
-        item_url: ["/b/lang", "/b/math", "/b/opt", "/b/stat", "/b/cs", "/b/under-dev"]
+        items: ["Language", "Mathematics", "Statistics", "Computer Science", "Under Development", "Optimization", "Convention"],
+        item_url: ["/b/lang", "/b/math", "/b/stat", "/b/cs", "/b/under-dev", "/b/opt", "/b/convention"]
     },
     {
         title: "Contact",
