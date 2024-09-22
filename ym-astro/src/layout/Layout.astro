@@ -4,11 +4,11 @@ interface Props {
 }
 const { title } = Astro.props;
 
-import Header from './Header.astro';
-import Footer from './Footer.astro';
-import LayoutCopy from './LayoutCopy.astro';
-import LayoutTitle from './pageTitle.astro';
-import CopyCode from './component/copyCode.astro';
+import Header from './components/header/Header.astro';
+import Footer from './components/footer/Footer.astro';
+// import LayoutCopy from '../frontendComponents/LayoutCopy.astro';
+// import LayoutTitle from '../frontendComponents/pageTitle.astro';
+// import CopyCode from '../component/copyCode.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -33,15 +33,16 @@ import CopyCode from './component/copyCode.astro';
 	<body style="margin: 0px; background-color: var(--bg-color-l)">
 		<Header />
 		<main>
-			<LayoutTitle titleText={title} />
-			<LayoutCopy />
+			<!-- <LayoutTitle titleText={title} /> -->
+			<!-- <LayoutCopy /> -->
 			<slot />
 		</main>
 		<Footer />
 	</body>
 </html>
 <style>
-	@import './styles/_global.scss';
+
+	@import "./styles/_global.scss";
 	main {
 		margin-top: var(--header-height);
 

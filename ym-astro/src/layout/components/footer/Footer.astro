@@ -1,6 +1,6 @@
 ---
 import Column from './FooterColumn.astro';
-import { footer__data } from './data/footerData.ts';
+import { footer__data } from './footerData';
 ---
 
 <footer>
@@ -15,7 +15,6 @@ import { footer__data } from './data/footerData.ts';
 </footer>
 
 <style>
-  @import './styles/_global.scss';
   footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
