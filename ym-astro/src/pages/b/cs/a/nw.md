@@ -31,3 +31,5 @@ ARP/RARP
 * [インターネット層](/b/cs/a/nw/internet)
 * [トランスポート層](/b/cs/a/nw/transport)
 * [アプリケーション層](/b/cs/a/nw/application)
+
+[通信形態](/b/cs/a/nw/communication-methods)

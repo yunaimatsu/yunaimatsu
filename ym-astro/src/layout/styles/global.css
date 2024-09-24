@@ -1,8 +1,7 @@
-@import 'selection-options';
-@import 'toggle-options';
-@import 'custom-md';
+@import 'color.css';
+@import 'custom-md.css';
 
-// Default
+/* Default */
 p, ul {
     font-size: var(--font-size);
 }
@@ -41,17 +40,17 @@ code {
     color: var(--font-color-code);
     border-radius: 5px;
     --code-padding: 5px;
-    // padding-top: var(--code-padding);
-    // padding-bottom: var(--code-padding);
+    padding-top: var(--code-padding);
+    padding-bottom: var(--code-padding);
 }
 
-// Selection-Options
+/* Selection-Options */
 ::selection {
     background-color: var(--accent-color); /* Set background color to yellow */
     color: #000000;       /* Set text color to black */
 }
 
-// Vendor prefix for Firefox
+/* Vendor prefix for Firefox */
 ::-moz-selection {
     background-color: var(--accent-color);
     color: #000000;

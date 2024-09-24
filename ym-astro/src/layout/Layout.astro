@@ -10,6 +10,7 @@ import Footer from './frame/footer/Footer.astro';
 // import LayoutTitle from '../frontendComponents/pageTitle.astro';
 // import CopyCode from '../component/copyCode.astro';
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -41,14 +42,13 @@ import Footer from './frame/footer/Footer.astro';
 	</body>
 </html>
 <style>
-
-	@import "./styles/_global.scss";
+	@import "./styles/global.css";
 	main {
 		margin-top: var(--header-height);
 
 		/* Design */
         background-color: var(--bg-color-l);
-		--vertical-space: 2rem;
+
 		padding-top: var(--vertical-space);
 		padding-bottom: var(--vertical-space);
 		margin-right: var(--side-space);

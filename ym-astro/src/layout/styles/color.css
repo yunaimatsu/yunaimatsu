@@ -1,12 +1,11 @@
-// Variables only here!
+/* Variables only here! */
 
-
-// Colors
+/* Colors */
 :root {
     --main-color: #333333;
     --accent-color: #DF4C52;
 
-    // Font colors
+    /* Font colors */
     --font-color-l: #13151a;
     --font-color-d: #bbbbbb;
     --font-color-code: var(--accent-color);
@@ -21,14 +20,15 @@
     --bg-color-d: #313131;
 }
 
-// Sizes
+/* Sizes */
 :root {
     --header-height: 100px;
     --font-size: 18px;
     --side-space: 10%;
+    --vertical-space: 2rem;
 }
 
-// Fonts
+/* Fonts */
 :root {
     --font-stack: 'Helvetica Neue', Helvetica, sans-serif;
 }
