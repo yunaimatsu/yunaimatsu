@@ -1,4 +1,7 @@
-
+# Website framework
+1. Header
+2. Main
+3. Footer
 
 # Astro Starter Kit: Basics
 
