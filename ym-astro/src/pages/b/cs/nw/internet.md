@@ -10,7 +10,7 @@ layout: '@layout/Layout.astro'
 designating Mac address
 
 connecting one pair of node
-# [IPアドレス](/b/cs/a/nw/internet/ip-address)
+# [IPアドレス](/b/cs/nw/internet/ip-address)
 
 AS(**a**utonomous_**s**ystem)
 同じ運用ポリシーのもとで動作するnetworkの集合

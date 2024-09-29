@@ -15,7 +15,7 @@ layout: '@layout/Layout.astro'
 * クラスA: 8/9
 * クラスB: 16/17
 * クラスC: 24/25
-* クラスD: [マルチキャスト](/b/cs/a/nw/internet/multicast)
+* クラスD: [マルチキャスト](/b/cs/nw/internet/multicast)
 * クラスE: 研究機関の実験用
 ## Private
 * Class A: 10.0.0.0 ~ 10.255.255.255
