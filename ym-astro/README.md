@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WISH LIST
 共立出版: 情報系のための離散数学
 森北出版: グラフ理論入門-基本とアルゴリズム-
@@ -6,6 +7,12 @@
 数研出版: 大学教養統計学
 ナツメ社: これならわかる！ベイズ統計学
 東京電機大学出版局: 形式言語理論入門
+=======
+# Website framework
+1. Header
+2. Main
+3. Footer
+>>>>>>> 3ded5b29c263e8c2345f84a203f715627dd2e005
 
 # Astro Starter Kit: Basics
 
