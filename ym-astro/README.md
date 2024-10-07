@@ -1,3 +1,5 @@
+
+https://emphasized-bean-69d.notion.site/daX_26-_HOME-1166e0241eb380bb9437f79ff27e427a?pvs=4
 # you can learn everything you need stars from beginner to expert
 入門から初級まで、このサイトで学べます！
 クリックすると、サイトが更新される。
